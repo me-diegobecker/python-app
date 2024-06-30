@@ -82,7 +82,7 @@ jobs:
         if [ -f requirements.txt]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       run: |
-        pip install pytest flake8
+        pip install pytest flask
         export PYTHONPATH=src
         pytest
   # build:
